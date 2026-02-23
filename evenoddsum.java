@@ -19,5 +19,5 @@ public class evenoddsum {
         }
         System.out.println("the sum of even integer is" +evensum);
         System.out.println("the Sum of odd integer is"+oddsum);
-    }
+    }    
 }

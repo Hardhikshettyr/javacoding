@@ -12,5 +12,5 @@ public class loopcontinue {
             }
             System.out.println(n);
         } while (true);
-    }
+    }      
 }
