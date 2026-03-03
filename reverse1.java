@@ -11,7 +11,7 @@ public class reverse1 {
             int lastdigit=n%10;
             reverse=(reverse*10)+lastdigit;
             n/=10;
-        }
+        }                                        
         System.err.println(reverse);
     }
 }
