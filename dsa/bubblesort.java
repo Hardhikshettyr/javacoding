@@ -23,7 +23,7 @@ public class bubblesort{
     }
     public static void main(String[]args){
         int arr[]={1,2,3,4,5};
-        sort(arr);
+        sort(arr);       
         dispaly(arr);
     }
 }
