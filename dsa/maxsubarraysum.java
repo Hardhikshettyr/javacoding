@@ -17,7 +17,7 @@ public class maxsubarraysum {
         }
         System.out.println("maxsum:"+maxsum);
     }
-    
+
     public static void prefixsum(int arr[]) {
         int currsum;
         int maxsum=Integer.MIN_VALUE;
@@ -77,7 +77,7 @@ public class maxsubarraysum {
         System.out.println(ms);
     }
     public static void main(String[] args) {
-        int arr[]={1,-2,6,-1,3};
+        int arr[]={1};
         kadanees(arr);
     }
 }
