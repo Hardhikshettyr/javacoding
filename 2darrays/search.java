@@ -1,0 +1,62 @@
+
+
+public class search {
+    public static boolean bruteforce(int matrix[][], int key){
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                if(matrix[i][j]==key){
+                    return true;
+                }
+            }
+            
+        }
+        return false;
+    }
+    
+    public static boolean binarySearch(int matrix[][], int key){
+        int n = matrix.length;
+        int m = matrix[0].length;
+
+        int start = 0;
+        int end = n * m - 1;
+
+        while(start <= end){
+            int mid = (start + end) / 2;
+
+            int row = mid / m;
+            int col = mid % m;
+
+            if(matrix[row][col] == key){
+                return true;
+            }
+            else if(matrix[row][col] < key){
+                start = mid + 1;
+            }
+            else{
+                end = mid - 1;
+            }
+        }
+        return false;
+    }
+
+    public static boolean staircase(int matrix[][], int key){
+        int row=0;
+        int col=matrix[0].length-1;
+
+        while(row<matrix.length && col>=0){
+            if(matrix[row][col]==key){
+                return true;
+            }else if(key<matrix[row][col]){
+                col--;
+            }else{
+                row++;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        int matrix[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+        boolean index=staircase(matrix,17);
+        System.out.println(index);
+    }
+}
