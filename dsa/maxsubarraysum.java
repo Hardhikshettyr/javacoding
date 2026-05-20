@@ -1,25 +1,25 @@
 public class maxsubarraysum {
-    public static void bruteforce(int arr[]) {
-        int currsum;
+
+    public static void bruteforce(int arr[]){
+        int cursum=0;
         int maxsum=Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
             for(int j=i;j<arr.length;j++){
-                currsum=0;
+                cursum=0;
                 for(int k=i;k<=j;k++){
-                    currsum+=arr[k];
+                    cursum+=arr[k];
                 }
-                System.out.println(currsum);
-                if(maxsum<currsum){
-                    maxsum=currsum;
+                System.out.println(cursum);
+                if(cursum>maxsum){
+                    maxsum=cursum;
                 }
             }
-            
         }
-        System.out.println("maxsum:"+maxsum);
+        System.out.println("Maxsum:"+maxsum);
     }
 
     public static void prefixsum(int arr[]) {
-        int currsum;
+        int cursum=0;
         int maxsum=Integer.MIN_VALUE;
         int prefix[]=new int[arr.length];
         prefix[0]=arr[0];
@@ -29,13 +29,14 @@ public class maxsubarraysum {
         }
         for(int i=0;i<arr.length;i++){
             for(int j=i;j<arr.length;j++){
-                currsum=i==0 ? prefix[j] : prefix[j]-prefix[i-1];
-                if(maxsum<currsum){
-                    maxsum=currsum;
+                cursum=i==0 ? prefix[j] : prefix[j]-prefix[i-1];
+                System.out.println(cursum);
+                if(cursum>maxsum){
+                    maxsum=cursum;
                 }
             }
         }
-        System.out.println("maxsum:"+maxsum);
+        System.out.println("Maxsum:"+maxsum);
     }
 
     public static void kadanees(int arr[]){
@@ -77,7 +78,7 @@ public class maxsubarraysum {
         System.out.println(ms);
     }
     public static void main(String[] args) {
-        int arr[]={1};
-        kadanees(arr);
+        int arr[]={1,2,3,4,5,6};
+        prefixsum(arr);
     }
 }
