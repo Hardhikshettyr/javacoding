@@ -5,9 +5,9 @@ public class subarray {
                 for(int k=i;k<=j;k++){
                     System.out.print(arr[k] + " ");
                 }
-                System.err.println("");
+                System.out.println("");
             }
-            System.err.println("");
+            System.out.println("");
         }
     }
     public static void main(String[] args) {
