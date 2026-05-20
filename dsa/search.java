@@ -18,17 +18,18 @@ public class search {
         return -1;
     }
 
-    public static int linearsearch(int numbers[],int key){
-            for(int i=0;i<numbers.length;i++){
-                if(numbers[i]==key){
-                    return i;
-                }       
+    public static int linearsearch(int arr[], int key){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==key){
+                return i;
             }
-            return -1;
+        }
+        return -1;
+            
         }
     public static void main(String[] args) {
         int arr[]={2,4,6,8,10,12,14};
-        int key=20;
+        int key=6;
         int index=linearsearch(arr, key);
         System.out.println(index);
     }
