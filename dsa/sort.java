@@ -15,6 +15,9 @@ public class sort{
             if(swap==0){
                 return;
             }
+
+
+            
         }
     }
     public static void selectionsort(int arr[]){
