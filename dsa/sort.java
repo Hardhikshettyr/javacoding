@@ -4,6 +4,7 @@ public class sort{
     public static void bubblesort(int arr[]){
         for(int i=0;i<arr.length-1;i++){
             int swap=0;
+            //i means number of turn
             for(int j=0;j<arr.length-1-i;j++){
                 if(arr[j]>arr[j+1]){
                     int temp=arr[j];
@@ -15,9 +16,6 @@ public class sort{
             if(swap==0){
                 return;
             }
-
-
-            
         }
     }
     public static void selectionsort(int arr[]){
@@ -28,21 +26,21 @@ public class sort{
                     min=j;
                 }
             }
-            int temp=arr[min];
-            arr[min]=arr[i];
-            arr[i]=temp;
+            int temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
         }
     }
 
     public static void insertionsort(int arr[]){
         for(int i=1;i<arr.length;i++){
-            int curr=arr[i];
+            int cur=arr[i];
             int prev=i-1;
-            while(prev>=0 && arr[prev]>curr){
+            while(prev>=0 && arr[prev]>cur){
                 arr[prev+1]=arr[prev];
                 prev--;
-            }
-            arr[prev+1]=curr;
+            } 
+            arr[prev+1]=cur;
         }
     }
     
@@ -74,7 +72,9 @@ public class sort{
     }
     public static void main(String[]args){
         int arr[]={5,4,1,3,2};
-        countingsort(arr);  
+        // bubblesort(arr);  
+        // selectionsort(arr);
+        insertionsort(arr);
         // Arrays.sort(arr);     
         // Arrays.sort(arr,0,3);
         dispaly(arr);
