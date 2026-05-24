@@ -46,7 +46,7 @@ public class sort{
     public static void countingsort(int arr[]){
         int largest=Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
-            largest=Math.max(largest, arr[i]);
+            largest =Math.max(largest,arr[i]);
         }
 
         int count[]=new int [largest+1];
@@ -62,6 +62,7 @@ public class sort{
                 count[i]--;
             }
         }
+        
     }
     public static void dispaly(int arr[]){
         for(int i=0;i<arr.length;i++){
@@ -70,13 +71,14 @@ public class sort{
         System.out.println("");
     }
     public static void main(String[]args){
-        int arr[]={5,4,1,3,2};
+        int arr[]={1,4,1,2,3,4,3,7};
         // bubblesort(arr);  
         // selectionsort(arr);
         // insertionsort(arr);
         // Arrays.sort(arr);     
         // Arrays.sort(arr,0,2);
         // Arrays.sort(arr,Collections.reverseOrder());
+        countingsort(arr);
         dispaly(arr);
     }
 }
