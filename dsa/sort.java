@@ -1,5 +1,4 @@
 
-
 public class sort{
     public static void bubblesort(int arr[]){
         for(int i=0;i<arr.length-1;i++){
@@ -74,9 +73,10 @@ public class sort{
         int arr[]={5,4,1,3,2};
         // bubblesort(arr);  
         // selectionsort(arr);
-        insertionsort(arr);
+        // insertionsort(arr);
         // Arrays.sort(arr);     
-        // Arrays.sort(arr,0,3);
+        // Arrays.sort(arr,0,2);
+        // Arrays.sort(arr,Collections.reverseOrder());
         dispaly(arr);
     }
 }
