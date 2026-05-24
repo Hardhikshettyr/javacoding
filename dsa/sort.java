@@ -74,11 +74,11 @@ public class sort{
         int arr[]={1,4,1,2,3,4,3,7};
         // bubblesort(arr);  
         // selectionsort(arr);
-        // insertionsort(arr);
+        insertionsort(arr);
         // Arrays.sort(arr);     
         // Arrays.sort(arr,0,2);
         // Arrays.sort(arr,Collections.reverseOrder());
-        countingsort(arr);
+        // countingsort(arr);
         dispaly(arr);
     }
 }
