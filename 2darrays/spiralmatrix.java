@@ -1,40 +1,35 @@
 public class spiralmatrix {
     public static void sp(int matrix[][]){
-        int startrow=0;
-        int endrow=matrix.length-1;
-        int startcol=0;
-        int endcol=matrix[0].length-1;
+        int sr=0, sc=0, er=matrix.length-1, ec=matrix[0].length-1;
 
-        while(startrow<=endrow && startcol<=endcol){
-        
+        while(sr<=er && sc<=ec){
             //top
-            for(int j=startcol;j<=endcol;j++){
-                System.out.print(matrix[startrow][j]+ " ");
+            for(int j=sc;j<=ec;j++){
+                System.out.print(matrix[sr][j]+" ");
             }
-
             //right
-            for(int i=startrow+1;i<=endrow;i++){
-                System.out.print(matrix[i][endcol]+ " ");
+            for(int i=sr+1;i<=er;i++){
+                System.out.print(matrix[i][ec]+" ");
             }
             //bottom
-            for(int j=endcol-1;j>=startcol;j--){
-                if(startrow==endrow){
+            for(int j=ec-1;j>=sc;j--){
+                if(sr==er){
                     break;
                 }
-                System.out.print(matrix[endrow][j]+ " ");
+                System.out.print(matrix[er][j]+" ");
             }
             //left
-            for(int i=endrow-1;i>=startrow+1;i--){
-                if(startcol==endcol){
+            for(int i=er-1;i>=sr+1;i--){
+                if(sc==ec){
                     break;
                 }
-                System.out.print(matrix[i][startcol]+ " ");
+                System.out.print(matrix[i][sc]+" ");
             }
 
-            startrow++;
-            startcol++;
-            endcol--;
-            endrow--;
+            sr++;
+            sc++;
+            er--;
+            ec--;
         }
     }
     public static void main(String[] args) {
