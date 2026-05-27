@@ -30,3 +30,12 @@ public class diagnolsum {
         System.out.println(linear(matrix));
     }
 }
+
+
+
+
+
+
+
+
+
