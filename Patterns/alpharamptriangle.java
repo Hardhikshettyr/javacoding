@@ -16,4 +16,4 @@ public class alpharamptriangle {
         int n=Sc.nextInt();
         solution(n);
     }
-}
+} 

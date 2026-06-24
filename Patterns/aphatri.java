@@ -16,4 +16,4 @@ public class aphatri {
         int n=Sc.nextInt();
         solution(n);
     }
-}
+} 

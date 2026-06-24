@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class dimond {
+public class diamond {
     public static void solution(int n){
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n-i;j++){
@@ -34,4 +34,4 @@ public class dimond {
         int n=Sc.nextInt();
         solution(n);
     }
-}
+} 

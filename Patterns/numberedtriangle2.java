@@ -15,4 +15,4 @@ public class numberedtriangle2{
         int n=Sc.nextInt();
         solution(n);
     }
-}
+} 

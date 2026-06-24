@@ -24,3 +24,4 @@ public class binarytriangle {
         solution(n);
     }
 }
+ 

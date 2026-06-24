@@ -23,3 +23,4 @@ public class halfdiamond {
         solution(n);
     }
 }
+ 

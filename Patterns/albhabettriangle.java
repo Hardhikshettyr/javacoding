@@ -16,3 +16,4 @@ public class albhabettriangle {
         solution(n);
     }
 }
+ 

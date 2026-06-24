@@ -19,3 +19,4 @@ public class reverserighttrianglr {
         solution(n);
     }
 }
+ 

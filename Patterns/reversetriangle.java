@@ -22,4 +22,4 @@ public class reversetriangle {
         int n=Sc.nextInt();
         solution(n);
     }
-}
+} 

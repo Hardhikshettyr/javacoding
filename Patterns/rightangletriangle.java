@@ -19,3 +19,4 @@ public class rightangletriangle {
         solution(n);
     }
 }
+ 

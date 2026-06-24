@@ -36,3 +36,4 @@ public class hallowdiamond {
         solution(n);
     }
 }
+ 

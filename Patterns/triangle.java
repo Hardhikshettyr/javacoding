@@ -23,4 +23,4 @@ public class triangle{
         int n=Sc.nextInt();
         solution(n);
     }
-}
+} 

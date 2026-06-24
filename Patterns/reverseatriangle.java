@@ -16,3 +16,4 @@ public class reverseatriangle {
         solution(n);
     }
 }
+ 

@@ -19,3 +19,4 @@ public class reversenumberedtriangle {
         solution(n);
     }
 }
+ 

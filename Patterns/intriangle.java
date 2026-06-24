@@ -18,3 +18,4 @@ public class intriangle {
         solution(n);
     }
 }
+ 

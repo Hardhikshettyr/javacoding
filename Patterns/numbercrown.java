@@ -24,3 +24,4 @@ public class numbercrown {
         solution(n);
     }
 }
+ 

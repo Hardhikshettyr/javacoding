@@ -36,3 +36,4 @@ public class butterfly {
         solution(n);
     }
 }
+ 
