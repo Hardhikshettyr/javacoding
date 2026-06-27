@@ -22,4 +22,4 @@ public class reversearray {
             System.out.println(num);
         }
     }
-}
+} 

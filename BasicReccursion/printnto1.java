@@ -12,4 +12,4 @@ public class printnto1{
     public static void main(String[] args) {
         print(5);
     }
-}
+} 

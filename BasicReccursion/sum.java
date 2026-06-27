@@ -16,3 +16,4 @@ public class sum {
         System.out.println(solution(4));
     }
 }
+ 
