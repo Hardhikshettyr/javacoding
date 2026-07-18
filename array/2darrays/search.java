@@ -13,8 +13,8 @@ public class search {
 
     // if matrix is soreted you can use single bianrysearch but if only rows and cols are sorted you have to perform mutiple b search using for loop
     public static boolean binary(int matrix[][], int target){
-        int m=matrix.length-1;
-        int n=matrix[0].length-1;
+        int m=matrix.length;
+        int n=matrix[0].length;
 
         int start=0;
         int end=m*n-1;
