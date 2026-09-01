@@ -3,14 +3,14 @@ package sorting;
 public class insertionsort {
     public static void sort(int arr[]){
         for(int i=1;i<arr.length;i++){
-            int cur=arr[i];
+            int crr=arr[i];
             int prev=i-1;
-            while(prev>=0 && arr[prev]>cur){
+            while(prev>=0 && arr[prev]>crr){
                 arr[prev+1]=arr[prev];
                 prev--;
             }
-            arr[prev+1]=cur;
-
+            arr[prev+1]=crr;
+            
         }
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
