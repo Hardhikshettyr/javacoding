@@ -27,7 +27,7 @@ public class countingsort {
     }
     public static void main(String[]args){
         int arr[]={7,7,2,3,2,4,1,1};
-        sort(arr);
+        sort(arr); 
     }
     
 }
